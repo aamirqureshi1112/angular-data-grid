@@ -1,0 +1,10 @@
+﻿<div class="btn-container">
+  <button  (click)="addColumn()"> Add column </button>
+  <button  (click)="removeColumn()"> Remove column </button>
+</div>
+<ag-grid-angular #agGrid class="ag-theme-balham element-table"
+                 [gridOptions]="gridOptions"
+                 [columnDefs]="columnDefs"
+                 [rowData]="rowData">
+</ag-grid-angular>
+
